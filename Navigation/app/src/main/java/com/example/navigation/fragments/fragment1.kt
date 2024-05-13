@@ -29,7 +29,7 @@ class fragment1 : Fragment() {
 
         btnNext.setOnClickListener{
 
-            val action2 = fragment1Directions.actionFragment1ToFragment2()
+            val action2 = fragment1Directions.actionFragment1ToFragment2("Hola!")
 
             view1.findNavController().navigate(action2)
         }
