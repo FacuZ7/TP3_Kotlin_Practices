@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/fragment1">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.recyclerview.fragments.fragment1"
+        android:label="fragment_fragment1"
+        tools:layout="@layout/fragment_fragment1" >
+        <action
+            android:id="@+id/action_fragment1_to_fragment2"
+            app:destination="@id/fragment2" />
+        <action
+            android:id="@+id/action_fragment1_to_fragmentRecyclerView"
+            app:destination="@id/fragmentRecyclerView" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.recyclerview.fragments.fragment2"
+        android:label="fragment_fragment2"
+        tools:layout="@layout/fragment_fragment2" >
+        <action
+            android:id="@+id/action_fragment2_to_fragment1"
+            app:destination="@id/fragment1" />
+        <argument
+            android:name="Text"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRecyclerView"
+        android:name="com.example.recyclerview.fragments.fragmentRecyclerView"
+        android:label="fragment_recycler_view"
+        tools:layout="@layout/fragment_recycler_view" >
+        <action
+            android:id="@+id/action_fragmentRecyclerView_to_fragment1"
+            app:destination="@id/fragment1" />
+    </fragment>
+</navigation>
