@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="rare_green">#395130</color>
+    <color name="rare_blue">#2C4E4B</color>
+    <color name="rare_purple">#5C3A55</color>
+</resources>
